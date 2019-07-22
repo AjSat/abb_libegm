@@ -78,6 +78,8 @@ add_library(${PROJECT_NAME} ${SRC_FILES})
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES} ${PROTOBUF_LIBRARIES} ${catkin_LIBRARIES})
 
+add_subdirectory( src )
+
 #############
 ## Install ##
 #############
@@ -89,6 +91,8 @@ install(DIRECTORY include/${PROJECT_NAME}/
         FILES_MATCHING PATTERN "*.h")
 
 install(FILES ${EgmProtoHeaders}
+
+orocos_generate_package()
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
 
 install(FILES ${EgmProtoFiles}
