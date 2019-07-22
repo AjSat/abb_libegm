@@ -1,0 +1,90 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.9.0' compiled with GCC 5.4.0. Running in GNU/Linux.
+0.000 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.000 [ Info   ][Logger] Reference System Time is : 1563835507224600245 ticks ( 1.56384e+09 seconds ).
+0.000 [ Info   ][Logger] Logging is relative to this time.
+0.000 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /opt/ros/kinetic/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-ex/devel/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-rtt/devel/lib/orocos . Searching in: /opt/ros/kinetic/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-ex/devel/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-rtt/devel/lib/orocos
+0.000 [ Info   ][Logger] plugin 'rtt' not loaded before.
+0.000 [ Info   ][Logger] Loading plugin libraries from directory /opt/ros/kinetic/lib/orocos/gnulinux/./plugins ...
+0.000 [ Info   ][Logger] Loaded RTT Service 'scripting' from 'rtt-scripting'
+0.000 [ Info   ][Logger] Loaded RTT Service 'marshalling' from 'rtt-marshalling'
+0.000 [ Info   ][Logger] typekit 'rtt' not loaded before.
+0.000 [ Info   ][Logger] Loading typekit libraries from directory /opt/ros/kinetic/lib/orocos/gnulinux/./types ...
+0.001 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.001 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-mqueue-transport' from 'rtt-transport-mqueue'
+0.008 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://rtt-types.
+0.008 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-corba-types' from 'rtt-transport-corba'
+0.019 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for int
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for int
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for uint
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for uint
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for llong
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for llong
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for ullong
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ullong
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for double
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for double
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for float
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for float
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for char
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for bool
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for bool
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for void
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ConnPolicy
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for TaskContext
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for string
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for array
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for array
+0.019 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for rt_string
+0.019 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-types' from 'rtt-typekit'
+0.019 [ Info   ][Logger] RTT_COMPONENT_PATH was set to: /opt/ros/kinetic/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-ex/devel/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-rtt/devel/lib/orocos . Searching in: /opt/ros/kinetic/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-ex/devel/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-rtt/devel/lib/orocos
+0.019 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='lua'
+0.019 [ Info   ][lua] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 4095 and period 0 (PID= 21497 ).
+0.020 [ Info   ][Thread] Creating Thread for scheduler=ORO_SCHED_OTHER, priority=1, CPU affinity=0, with name='Deployer'
+0.020 [ Info   ][Deployer] Thread created with scheduler type 'ORO_SCHED_OTHER', priority 0, cpu affinity 4095 and period 0 (PID= 21498 ).
+0.020 [ Info   ][rttlua-gnulinux::main()] No site file was found. Importing 'ocl' by default.
+0.020 [ Info   ][ComponentLoader::import(path_list)] Importing directory /opt/ros/kinetic/lib/orocos/gnulinux/ocl ...
+0.030 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/opt/ros/kinetic/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-netcdf-gnulinux.so'
+0.030 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::NetcdfReporting'
+0.031 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/opt/ros/kinetic/lib/orocos/gnulinux/ocl/liborocos-ocl-timer-gnulinux.so'
+0.031 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/opt/ros/kinetic/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-gnulinux.so'
+0.032 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::HelloWorld'
+0.032 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/opt/ros/kinetic/lib/orocos/gnulinux/ocl/liborocos-ocl-common-gnulinux.so'
+0.032 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::LuaComponent'
+0.033 [ Info   ][ComponentLoader::import(path_list)] Loaded multi component library '/opt/ros/kinetic/lib/orocos/gnulinux/ocl/liborocos-ocl-logging-gnulinux.so'
+0.033 [ Info   ][ComponentLoader::import(path_list)] Loaded component type 'OCL::LuaTLSFComponent'
+0.033 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /opt/ros/kinetic/lib/orocos/gnulinux/ocl/types ...
+0.035 [ Info   ][TypekitRepository::Import] Loading Typekit OCLTypekit.
+0.035 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'OCLTypekit' from 'ocl'
+0.035 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /opt/ros/kinetic/lib/orocos/gnulinux/ocl/plugins ...
+0.035 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'Lua' from 'rttlua-plugin'
+0.036 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'os' from 'os'
+0.036 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'LuaTLSF' from 'rttlua-tlsf-plugin'
+0.037 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Service 'print' from 'print'
+0.038 [ Info   ][ComponentLoader::import(path_list)] Importing directory /opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros ...
+0.038 [ Info   ][ComponentLoader::import(path_list)] Loading typekit libraries from directory /opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types ...
+0.060 [ Info   ][TypekitRepository::Import] Loading Typekit ros-primitives.
+0.061 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT TypeKit/Transport 'ros-primitives' from 'rtt-ros-primitives-typekit'
+0.061 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins ...
+0.063 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Plugin 'ros' from 'rtt_ros_service'
+0.087 [ Info   ][ComponentLoader::import(path_list)] Importing directory /opt/ros/kinetic/lib/orocos/gnulinux/rtt_rospack ...
+0.087 [ Info   ][ComponentLoader::import(path_list)] Loading plugin libraries from directory /opt/ros/kinetic/lib/orocos/gnulinux/rtt_rospack/plugins ...
+0.088 [ Info   ][ComponentLoader::import(path_list)] Loaded RTT Plugin 'rospack' from 'rtt_rospack'
+0.089 [ Info   ][ROSService::import("rtt_rospack")] Loaded plugins from ROS package "rtt_rospack" and its dependencies.
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)] No such package or directory found in search path: abb_libegm. Search path is: /opt/ros/kinetic/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-ex/devel/lib/orocos:/home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-rtt/devel/lib/orocos:.
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)] Directories searched include the following: 
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /opt/ros/kinetic/lib/orocos/abb_libegm
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /opt/ros/kinetic/lib/orocos/gnulinux/abb_libegm
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-ex/devel/lib/orocos/abb_libegm
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-ex/devel/lib/orocos/gnulinux/abb_libegm
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-rtt/devel/lib/orocos/abb_libegm
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - /home/ajay/Desktop/motion_planning_libraries/etasl/ws/etasl-rtt/devel/lib/orocos/gnulinux/abb_libegm
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - ./abb_libegm
+0.089 [ ERROR  ][ComponentLoader::importInstalledPackage(package, path_list)]  - ./gnulinux/abb_libegm
+406.950 [ Info   ][stopComponentsGroup] Stopping group 0
+406.950 [ Info   ][cleanupComponentsGroup] Cleaning up group 0
+406.950 [ Info   ][rttlua-gnulinux::main()] Unloading group 0
+406.950 [ Info   ][rttlua-gnulinux::main()] Kick-out of group 0 successful.
+406.952 [ Info   ][Logger] Orocos Logging Deactivated.

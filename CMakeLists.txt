@@ -5,6 +5,16 @@ find_package(catkin REQUIRED)
 
 find_package(Boost REQUIRED COMPONENTS system thread)
 
+#find orocos packages
+find_package(OROCOS-RTT QUIET)
+if (NOT OROCOS-RTT_FOUND)
+  message (FATAL_ERROR "\nCould not find Orocos. Please use the shell command\n 'source orocos_toolchain/env.sh' and then run cmake again.")
+endif()
+
+# Defines the orocos_* cmake macros. See that file for additional
+# documentation.
+include( ${OROCOS-RTT_USE_FILE_PATH}/UseOROCOS-RTT.cmake )
+
 #############################
 ## Google Protocol Buffers ##
 #############################
@@ -55,6 +65,7 @@ set(SRC_FILES
     src/egm_logger.cpp
     src/egm_udp_server.cpp
     src/egm_trajectory_interface.cpp
+    src/c3_joint_velocity_controller_node.cpp
     ${EgmProtoSources})
 
 include_directories(include
