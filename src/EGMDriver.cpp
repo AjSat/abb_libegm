@@ -15,7 +15,7 @@ namespace EGM
     TaskContext(name,PreOperational)
     , p_simulation(true)
     , p_numjoints(7)
-    , p_egm_ip("192.168.125.1")
+    /**, p_egm_ip("192.168.125.1")
     , p_egm_port(6511)
     , p_baseframe("base_link")
     , p_effort_origin("internal")
@@ -23,10 +23,11 @@ namespace EGM
     , m_qdes(7)
     , m_q_actual(7)
     , m_t_actual(7)
-    , m_qdot_actual(7)
+    , m_qdot_actual(7)**/
   {
+
     //Adding properties
-    this->addProperty("egm_ip",     p_egm_ip).doc("EGM IP address");
+    /**this->addProperty("egm_ip",     p_egm_ip).doc("EGM IP address");
     this->addProperty("egm_port",   p_fri_port).doc("FRI Connection Port Number");
     this->addProperty("simulation", p_simulation);
     this->addProperty("baseframe",  p_baseframe).doc("Frame name of the robot base");
@@ -71,21 +72,21 @@ namespace EGM
       m_joint_states.name[i] = ss.str();
       m_t_ext.names[i]        = ss.str();
     }
-    port_joint_state.setDataSample(m_joint_states);
+    port_joint_state.setDataSample(m_joint_states); **/
     
   }
 
-  FRIDriver::~FRIDriver()
+  EGMDriver::~EGMDriver()
   {}
 
-  bool FRIDriver::configureHook()
+  bool EGMDriver::configureHook()
   {
     if (p_simulation)
     {
     }
     else
     {
-      Logger::In in(this->getName());
+      //Logger::In in(this->getName());
       //ClientApplication app(connection, client);
       // hard coded hostname, to be removed
 //       app.connect(port, NULL);
@@ -93,9 +94,9 @@ namespace EGM
     return true;
   }
 
-  bool FRIDriver::startHook()
+  bool EGMDriver::startHook()
   {
-    if (p_simulation)
+    /**if (p_simulation)
     {
       Logger::log() << Logger::Debug << "Entering startHook Simulation" << Logger::endl;
     }
@@ -105,13 +106,13 @@ namespace EGM
       app.connect(p_fri_port, p_fri_ip.c_str());
       success = true;  
       Logger::In in(this->getName());
-    }
+    }**/
     return true;
   }
 
-  void FRIDriver::updateHook()
+  void EGMDriver::updateHook()
   {
-    if (p_simulation)
+    /**if (p_simulation)
     {
       Logger::log() << Logger::Debug << "Entering updateHook Simulation" << Logger::endl;
       // upon new data, get commanded joint position and set measured position to commanded position
@@ -128,7 +129,8 @@ namespace EGM
 	Logger::log() << Logger::Debug << "Doing app.step()" << Logger::endl;
         success = app.step();
       }
-      if (success) /* everything went fine, just go ahead*/
+      if (success) /* everything went fine, just go ahead*/ 
+    /**
       { 
         //TODO:
         // * Implementing lost sampling behaviour
@@ -175,10 +177,10 @@ namespace EGM
         app.disconnect();
         app.connect(p_fri_port, p_fri_ip.c_str());
         success = true;
-// 	success = false;
+// 	success = false; 
 	return; /*skip the rest step */
-      }  
-    }
+     // }  
+   /** }
     
     client.getJointPosition();
     client.getJointEffort();
@@ -203,14 +205,14 @@ namespace EGM
     port_joint_state.write(m_joint_states);
     port_joint_ext_jnt.write(m_t_ext);
     
-    this->trigger();
+    this->trigger();**/
   }
 
-  void FRIDriver::stopHook() {
-    app.disconnect();
+  void EGMDriver::stopHook() {
+    //app.disconnect();
   }
   
-  void FRIDriver::cleanupHook() {}
+  void EGMDriver::cleanupHook() {}
 }//namespace
 
-ORO_CREATE_COMPONENT(FRI::FRIDriver)
+ORO_CREATE_COMPONENT(EGM::EGMDriver)

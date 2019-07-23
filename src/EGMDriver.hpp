@@ -29,7 +29,7 @@
 
 #include <vector>
 
-using namespace ABB::EGM;
+//using namespace ABB::EGM;
 
 namespace EGM
 {
@@ -50,7 +50,7 @@ namespace EGM
         
     private:
       ///EGM-related
-      ...
+      //...
       /// Properties
       bool               p_simulation;
       const unsigned int p_numjoints;
@@ -62,7 +62,7 @@ namespace EGM
       bool success;
 
       // Internal, mem alloc
-      motion_control_msgs::JointPositions  m_joint_pos_command;
+     /** motion_control_msgs::JointPositions  m_joint_pos_command;
       motion_control_msgs::JointVelocities m_joint_vel_command;
       motion_control_msgs::JointEfforts    m_joint_effort_command;
       motion_control_msgs::JointEfforts    m_t_ext;
@@ -86,6 +86,7 @@ namespace EGM
       OutputPort<motion_control_msgs::JointPositions> port_joint_pos_msr;
       OutputPort<motion_control_msgs::JointEfforts>   port_joint_ext_jnt;
       OutputPort<sensor_msgs::JointState>             port_joint_state;
+      **/
     };
 }//namespace
 
